@@ -1,3 +1,3 @@
 <?php
-echo 'Silence is golden.';
+add_theme_support('title-tag');
 ?>

@@ -2,17 +2,33 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>My static title</title>
-    <link rel="stylesheet" href="style.css">
+    <title><?php bloginfo('name') ?></title>
+    <link rel="stylesheet" href="<? bloginfo('stylesheet_url') ?>">
+    <? wp_head(); ?>
 </head>
 
 <body>
-<? get_head(); ?>
+<header>
+    <p><?php bloginfo('name') ?></p>
+</header>
 <main>
     <h1>The page title</h1>
-    <p>The content</p>
+    <p>
+        <?
+        if (have_posts()) {
+
+            while (have_posts()) {
+
+                the_post();
+
+                the_content();
+            }
+        } ?>
+    </p>
 </main>
-<? get_footer(); ?>
+<footer>
+    © copyright -Theme maker company inc.
+</footer>
 </body>
 
 </html>
