@@ -6,11 +6,8 @@
     <link rel="stylesheet" href="<? bloginfo('stylesheet_url') ?>">
     <? wp_head(); ?>
 </head>
-
 <body>
-<header>
-    <p><?php bloginfo('name') ?></p>
-</header>
+<?php get_header();?>
 <main>
     <h1>The page title</h1>
     <p>

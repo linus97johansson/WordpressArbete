@@ -1,6 +1,7 @@
 <?php
 add_theme_support('title-tag');
-
+include ('Includes/oppettiderwidget.php');
+include ('Includes/menus.php');
 
 /* Functions */
 
@@ -150,7 +151,8 @@ function dish_taxonomies() {
 }
 
 
-add_action( 'init', 'dish_taxonomies' );
+
+  add_action( 'init', 'dish_taxonomies' );
 
 
 
