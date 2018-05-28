@@ -2,6 +2,7 @@
 add_theme_support('title-tag');
 include ('Includes/oppettiderwidget.php');
 include ('Includes/menus.php');
+include ('includes/slider.php');
 
 /* Functions */
 
