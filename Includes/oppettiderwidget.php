@@ -12,7 +12,7 @@
      'before_title'  => '<p class="widget-title">',
      'after_title'   => '</p>',
      /** HTML to wrap each widget  */
-     'before_widget' => '<section>',
+     'before_widget' => '<section class="widget-container">',
      'after_widget'  => '</section>',
    );
    register_sidebar( $args );
