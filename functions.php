@@ -35,7 +35,7 @@ function project_post_type() {
 
         'hierarchical'        => false, // bool (defaults to FALSE)
 
-        'has_archive'         => false, // bool|string (defaults to FALSE)
+        'has_archive'         => true, // bool|string (defaults to FALSE)
 
         'query_var'           => 'dish', // bool|string (defaults to TRUE - post type name)
 
@@ -86,7 +86,7 @@ function project_post_type() {
 
     /* Register the post type. */
     register_post_type(
-        'project', // Post type name. Max of 20 characters. Uppercase and spaces not allowed.
+        'dishes', // Post type name. Max of 20 characters. Uppercase and spaces not allowed.
         $args      // Arguments for post type.
     );
 }
@@ -146,9 +146,9 @@ function dish_taxonomies() {
         'query_var'                  => 'dish-price',
     );
 
-    register_taxonomy( 'project-Type', array('project'), $args );
+    register_taxonomy( 'Category', array('dishes'), $args );
 
-    register_taxonomy( 'Price', array('project'), $priceArgs);
+    register_taxonomy( 'Price', array('dishes'), $priceArgs);
 }
 
 

@@ -7,4 +7,6 @@
     <title><?php bloginfo('name')?></title>
 </head>
 <body>
-  <?php get_template_part('partials/sitehead'); ?>
+  <?php get_template_part('partials/sitehead');
+wp_head();
+?>
