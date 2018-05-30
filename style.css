@@ -16,6 +16,8 @@ html, body{
 }
 main{
   overflow: hidden;
+  box-sizing: border-box;
+  padding: 22px 22px;
 }
 header{
   background: #393939;
@@ -39,6 +41,7 @@ footer{
 
 }
 .menu{
+
 }
 .menu > ul{
   list-style: none;
@@ -49,20 +52,45 @@ footer{
   display: block;
   margin-left: 11px;
   float: left;
+
+}
+.menu > ul > li > a:hover{
+  color: orange;
 }
 .menu > ul > li > a{
   color: white;
   text-decoration: none;
+  transition: color .3s ease-in-out;
 }
 .widget-container{
   background: grey;
-  width: 50%;;
-  padding: 11px 22px;
+  width: 100%;;
+  padding: 11px;
   float: right;
   text-align: center;
   box-sizing: border-box;
+  margin: 11px 0;
 }
 .widget-title{
   font-weight: bold;
   font-size: 1.5em;
+  margin-bottom: 5px;
+}
+.red{
+  background: red;
+}
+.meny-container{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  max-height: 125vh;
+}
+.meny-container > li{
+  width: 50%;
+  padding-left: 22px;
+  box-sizing: border-box;
+  display: block;
+}
+.meny-container > li::before{
+  counter-increment: section;
 }

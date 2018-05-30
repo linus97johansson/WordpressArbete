@@ -1,6 +1,6 @@
 <?php
 add_theme_support('title-tag');
-include ('Includes/oppettiderwidget.php');
+include ('Includes/sidebar.php');
 include ('Includes/menus.php');
 include ('includes/slider.php');
 
@@ -118,7 +118,7 @@ function dish_taxonomies() {
         'show_admin_column'          => true,
         'show_in_nav_menus'          => true,
         'show_tagcloud'              => true,
-        'query_var'                  => 'dish-type',
+        'query_var'                  => 'project-type',
     );
 
 
@@ -142,7 +142,7 @@ function dish_taxonomies() {
         'show_ui'                    => true,
         'show_admin_column'          => true,
         'show_in_nav_menus'          => true,
-        'show_tagcloud'              => true,
+        'show_tagcloud'              => false,
         'query_var'                  => 'dish-price',
     );
 
