@@ -118,7 +118,7 @@ function dish_taxonomies() {
         'show_admin_column'          => true,
         'show_in_nav_menus'          => true,
         'show_tagcloud'              => true,
-        'query_var'                  => 'project-type',
+        'query_var'                  => 'dish-type',
     );
 
 
@@ -142,7 +142,7 @@ function dish_taxonomies() {
         'show_ui'                    => true,
         'show_admin_column'          => true,
         'show_in_nav_menus'          => true,
-        'show_tagcloud'              => false,
+        'show_tagcloud'              => true,
         'query_var'                  => 'dish-price',
     );
 
