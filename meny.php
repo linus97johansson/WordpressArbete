@@ -119,12 +119,19 @@ foreach ($categories as $dishType){
 
         foreach ($categories as $dishType){
 
-            print "<h2 id='dish'>".$dishType."</h2>";
+
+            print "<div class='".$dishType."'><h2 id='dish'>".$dishType."</h2>";
+
+            if($dishType == "Pizza"){
+                print"<ol>";
+            }else{
+                print"<ul>";
+            }
 
             foreach ($prices as $dishPrice){
 
                 $args = array(
-                    "post_type" => "dish",
+                    "post_type" => "dishes",
                     "posts_per_page" => -1,
                     'tax_query' => array(
                         'relation' => 'AND',
@@ -145,27 +152,36 @@ foreach ($categories as $dishType){
 
                 $my_query = new WP_Query( $args);
 
-                if ($my_query->have_post()) {
-                    print"<ol style='margin-left:50px;'>";
+                if ($my_query->have_posts()) {
                     while ($my_query->have_posts()) {
 
                         $my_query->the_post();
                         print"<li>";
                         the_title();
-                        print"</li><p>";
+                        print " ".$dishPrice . "kr";
+                        print"<p>";
                         the_content();
-                        print"</p>";
+                        print"</p>
+                        </li>";
+
                     }
 
-                    print"</ol>";
                 }
                 unset($args);
-                wp_reset_postdata();
+                wp_reset_query();
+
 
 
             }
+            if($dishType == "Pizza"){
+                print"</ol>";
+            }else{
+                print"</ul>";
+            }
+            print"</div>";
 
         }
+        print "</ol>";
 
         ?>
     </p>
