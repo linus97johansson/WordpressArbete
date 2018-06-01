@@ -111,6 +111,19 @@ footer{
   top:2px;
   left:0;
 }
+.meny-container-ul > li{
+    width: 50%;
+    box-sizing: border-box;
+    display: block;
+    padding-left: 22px;
+    margin-bottom: 6px;
+    position: relative;
+}
+ .meny-container-ul > li::before{
+    position: absolute;
+    top:2px;
+    left:0;
+}
 
 h2::before {
 }

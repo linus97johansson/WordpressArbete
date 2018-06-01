@@ -125,7 +125,7 @@ foreach ($categories as $dishType){
             if($dishType == "Pizza"){
                 print"<ol class='meny-container'>";
             }else{
-                print"<ul class='meny-container'>";
+                print"<ul class='meny-container-ul'>";
             }
 
             foreach ($prices as $dishPrice){
