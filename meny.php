@@ -111,7 +111,7 @@ foreach ($categories as $dishType){
 
 
 ?>
-<main style="background-color:green;">
+<main>
     <h1>The page title</h1>
     <p>
 
@@ -123,9 +123,9 @@ foreach ($categories as $dishType){
             print "<div class='".$dishType."'><h2 id='dish'>".$dishType."</h2>";
 
             if($dishType == "Pizza"){
-                print"<ol>";
+                print"<ol class='meny-container'>";
             }else{
-                print"<ul>";
+                print"<ul class='meny-container'>";
             }
 
             foreach ($prices as $dishPrice){
@@ -156,10 +156,10 @@ foreach ($categories as $dishType){
                     while ($my_query->have_posts()) {
 
                         $my_query->the_post();
-                        print"<li>";
+                        print"<li><h3>";
                         the_title();
                         print " ".$dishPrice . "kr";
-                        print"<p>";
+                        print"</h3><p>";
                         the_content();
                         print"</p>
                         </li>";
