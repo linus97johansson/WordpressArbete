@@ -1,4 +1,3 @@
-
 <?php
 if ( function_exists('register_sidebar') ) {
 
@@ -29,6 +28,35 @@ if ( function_exists('register_sidebar') ) {
    'after_title'   => '</p>',
    /** HTML to wrap each widget  */
    'before_widget' => '<section class="widget-container red">',
+   'after_widget'  => '</section>',
+   ));
+   register_sidebar(array(
+   'id'            => 'maps_widget',
+   /** Visible name in the Admin Dashboard Widget page */
+   'name'          => __( 'Google Maps'),
+   /** Visible description in the Admin Dashboard Widget page */
+   'description'   => __( 'Visar restaurangens position på Google maps'),
+
+   /** HTML to wrap widget title in  */
+   'before_title'  => '<p class="widget-title">',
+   'after_title'   => '</p>',
+   /** HTML to wrap each widget  */
+   'before_widget' => '<section class="widget-container">',
+   'after_widget'  => '</section>',
+   ));
+
+   register_sidebar(array(
+   'id'            => 'extra-widget',
+   /** Visible name in the Admin Dashboard Widget page */
+   'name'          => __( 'Önskas extra på Pizzan'),
+   /** Visible description in the Admin Dashboard Widget page */
+   'description'   => __( 'Liste över pristillägg vid extra på pizzan'),
+
+   /** HTML to wrap widget title in  */
+   'before_title'  => '<p class="widget-title">',
+   'after_title'   => '</p>',
+   /** HTML to wrap each widget  */
+   'before_widget' => '<section class="widget-container-extra">',
    'after_widget'  => '</section>',
    ));
 
