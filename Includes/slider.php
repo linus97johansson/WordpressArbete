@@ -49,18 +49,11 @@ $args = array(
 /* Post titles ($post->post_title). */
 'title',
 
-/* Post content ($post->post_content). */
-'editor',
-    'thumbnail',
+'thumbnail',
 
 /* Displays the Revisions meta box. If set, stores post revisions in the database. */
 'revisions',
 
-/* Displays the Attributes meta box with a parent selector and menu_order input box. */
-'page-attributes',
-
-/* Displays the Format meta box and allows post formats to be used with the posts. */
-'post-formats',
 ),
 
 'labels' => array(

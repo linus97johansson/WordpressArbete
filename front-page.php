@@ -24,7 +24,7 @@ $my_query = new WP_Query( $args);
 
                 $my_query->the_post();
                 print"<div>";
-                the_post_thumbnail();
+                the_post_thumbnail(none,array('class'=>'sliderImage'));
                 print"<div>".the_title()."</div>";
                 print"</div>";
             }
