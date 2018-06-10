@@ -33,9 +33,10 @@ $my_query = new WP_Query( $args);
 
         ?>
     </div>
-
-  <?php dynamic_sidebar( 'tider_widget' ); ?>
-  <?php dynamic_sidebar('lunch_widget') ?>
+  <div class="information-container">
+    <?php dynamic_sidebar( 'tider_widget' ); ?>
+    <?php dynamic_sidebar('lunch_widget') ?>
+  </div>
 </main>
 <?php get_footer(); ?>
 <script>

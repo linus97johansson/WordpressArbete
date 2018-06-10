@@ -77,7 +77,7 @@ footer{
   margin: 11px 0;
 }
 .widget-container-extra{
-  
+
 }
 .widget-title{
   font-weight: bold;
@@ -124,9 +124,43 @@ footer{
     top:2px;
     left:0;
 }
+.information-container{
+
+}
+.bx-wrapper{
+}
 
 h2::before {
 }
 .sliderImage{
 
+}
+footer{
+  overflow: hidden;
+}
+
+footer > .widget-container{
+  background: rgba(0, 0, 0, 0);
+}
+
+@media (min-width: 600px) {
+  .information-container {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+    .widget-container {
+      width: 47%;
+      margin: 11px;
+    }
+    footer > .widget-container {
+      background: rgba(0, 0, 0, 0);
+      width: 47%;;
+      padding: 11px;
+      float: right;
+      text-align: center;
+      box-sizing: border-box;
+      margin: 11px 0;
+    }
 }

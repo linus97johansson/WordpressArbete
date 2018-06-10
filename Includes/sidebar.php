@@ -60,5 +60,21 @@ if ( function_exists('register_sidebar') ) {
    'after_widget'  => '</section>',
    ));
 
+
+    register_sidebar(array(
+    'id'            => 'kontakt_widget',
+    /** Visible name in the Admin Dashboard Widget page */
+    'name'          => __( 'Kontaktinformation'),
+    /** Visible description in the Admin Dashboard Widget page */
+    'description'   => __( 'Kontaktinformation så som telefonnummer och adress'),
+
+    /** HTML to wrap widget title in  */
+    'before_title'  => '<p class="widget-title">',
+    'after_title'   => '</p>',
+    /** HTML to wrap each widget  */
+    'before_widget' => '<section class="widget-container">',
+    'after_widget'  => '</section>',
+    ));
+
 }
  ?>
