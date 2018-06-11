@@ -41,7 +41,7 @@ if ( function_exists('register_sidebar') ) {
    'before_title'  => '<p class="widget-title">',
    'after_title'   => '</p>',
    /** HTML to wrap each widget  */
-   'before_widget' => '<section class="widget-container">',
+   'before_widget' => '<section class="widget-container red full">',
    'after_widget'  => '</section>',
    ));
 
