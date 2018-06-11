@@ -31,7 +31,6 @@ $my_query = new WP_Query($args);
 
         ?>
     </p>
-    <h1>hello there, single</h1>
 </main>
 <?php
 get_footer();
