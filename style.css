@@ -91,7 +91,7 @@ footer{
   display: flex;
   flex-flow: column wrap;
   justify-content: space-around;
-  max-height: 150vh;
+  max-height: 120vh;
   counter-reset: li;
 }
 
@@ -133,7 +133,19 @@ footer{
 h2::before {
 }
 .sliderImage{
-
+  height: 300px;
+  background-size: cover;
+  text-align: center;
+}
+.sliderImage > img{
+  height: initial;
+  background-size: cover;
+}
+.featuredtext{
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  margin: 5px 0;
 }
 footer{
   overflow: hidden;
@@ -144,8 +156,11 @@ footer > .widget-container{
 }
 
 @media (min-width: 600px) {
+  .meny-container{
+    max-height: 70vh;
+  }
   .information-container {
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
     overflow: hidden;
     box-sizing: border-box;
@@ -177,4 +192,5 @@ footer > .widget-container{
       padding: 11px;
       margin: 0;
     }
+
 }
