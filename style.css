@@ -151,8 +151,16 @@ footer > .widget-container{
     box-sizing: border-box;
   }
     .widget-container {
-      width: 47%;
-      margin: 11px 11px 11px 0;
+      width: 50%;
+      margin-right: 11px;
+    }
+      .widget-container:nth-child(2){
+        margin-right: 0;
+        margin-left: 11px;
+      }
+    .flex{
+      display: flex;
+      justify-content: space-around;
     }
     footer > .widget-container {
       background: rgba(0, 0, 0, 0);
