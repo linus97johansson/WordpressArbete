@@ -3,7 +3,7 @@ get_header();
 ?>
 <main>
     <?php
-    print"hellot there";
+    print"Why do you use archive?";
     if (have_posts()) {
 
     while (have_posts()) {

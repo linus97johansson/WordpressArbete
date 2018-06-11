@@ -1,30 +1,8 @@
 <?php
-    /*  Template Name: Meny
+    /*  Template Name: main-template
    * Desription: Det här är menyn
    */
-/*
- * $args = array(
-    "post_type" => "dishes",
-    "posts_per_page" => -1,
-    'tax_query' => array(
-        'relation' => 'AND',
-        array(
-            'taxonomy' => 'Price',
-            'field' => 'name',
-            'terms'    => '85',
-        ),
-            array(
-                'taxonomy' => 'Category',
-                'field' => 'name',
-                'terms'    => 'Pizza',
-            ),
-    ),
 
-
-
-);
-$my_query = new WP_Query( $args);
- */
 get_header();
 
 $terms_categories = get_terms( array(

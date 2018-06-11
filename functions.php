@@ -35,7 +35,7 @@ function project_post_type() {
 
         'hierarchical'        => false, // bool (defaults to FALSE)
 
-        'has_archive'         => true, // bool|string (defaults to FALSE)
+        'has_archive'         => false, // bool|string (defaults to FALSE)
 
         'query_var'           => 'dish', // bool|string (defaults to TRUE - post type name)
 
@@ -44,7 +44,7 @@ function project_post_type() {
         'map_meta_cap'        => true, // bool (defaults to FALSE)
 
         'rewrite' => array(
-            'slug'                  => 'meny',
+            'slug'                  => 'main',
             'with_front'            => false,
             'pages'                 => false,
             'feeds'                 => false,
